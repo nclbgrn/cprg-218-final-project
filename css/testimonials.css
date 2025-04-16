@@ -1,0 +1,248 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #006666;
+    background-color: #fefefe;
+    line-height: 1.6;
+    text-align: center; /* Global centering */
+  }
+  
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #006666;
+    text-align: center;
+  }
+  
+  /* HEADER STYLING */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* LEFT: LOGO */
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 45px;
+    margin-right: 12px;
+  }
+  
+  .logo-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #0f5c72;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* CENTER: NAVIGATION */
+  .nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-center ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-center a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #0f5c72;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-center a:hover {
+    background-color: #e0f7fa;
+    color: #064d5a;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* RIGHT: WEATHER */
+  .header-right {
+    font-size: 1rem;
+    color: #0f5c72;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  /* INTRO */
+  .intro {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+  
+  /* TESTIMONIALS GRID */
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  @media (min-width: 700px) {
+    .testimonials {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+  /* TESTIMONIAL CARD */
+  .testimonial {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #444;
+  }
+  
+  .testimonial .author {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .testimonial.center-card {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+  
+  
+  
+  /* CLOSING STATEMENT */
+  .closing {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+  }
+
+  /* Weather Display */
+#weather {
+    background-color: #e0f7fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007a8a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 122, 138, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  #weather:hover {
+    background-color: #b2ebf2;
+    box-shadow: 0 4px 12px rgba(0, 122, 138, 0.2);
+    transform: translateY(-2px);
+  }
+
+  /* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f2f2f2;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .header-left {
+      margin-bottom: 10px;
+    }
+  
+    .nav-center {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav-center ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .nav-center a {
+      padding: 10px;
+      font-size: 1rem;
+      display: block;
+    }
+  
+    .header-right {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .intro,
+    .closing {
+      padding: 20px;
+      font-size: 1rem;
+    }
+  
+    .testimonials {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .testimonial {
+      padding: 20px;
+    }
+  
+    footer {
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+  }
+  

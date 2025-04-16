@@ -196,6 +196,25 @@ h1, h2, h3 {
     transform: scale(1.03);
   }
 
+  /* Weather Display */
+#weather {
+    background-color: #e0f7fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007a8a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 122, 138, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  #weather:hover {
+    background-color: #b2ebf2;
+    box-shadow: 0 4px 12px rgba(0, 122, 138, 0.2);
+    transform: translateY(-2px);
+  }
+
    /* Footer */
 footer {
     text-align: center;
@@ -206,13 +225,89 @@ footer {
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
-    .hero-text h1 {
-      font-size: 2.2rem;
-    }
-  
-    .info-grid {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
   }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .nav-center {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-center ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-center a {
+    padding: 10px;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .header-right {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero-bg {
+    height: 60vh;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant {
+    padding: 1.5rem;
+  }
+
+  .restaurant h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.3rem;
+  }
+
+  .hero-bg {
+    height: 50vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .restaurant p,
+  .extras p {
+    font-size: 0.95rem;
+  }
+
+  .extras h3 {
+    font-size: 1.2rem;
+  }
+}
   

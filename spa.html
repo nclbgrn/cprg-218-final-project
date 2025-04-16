@@ -6,10 +6,11 @@
   <title>Spa | Shangri-La Beach Resort</title>
   <link rel="stylesheet" href="css/spa.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="js/weather.js" defer></script>
+
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
     <div class="header-left">
       <img src="images/favicon.png" alt="Logo" class="logo-img">
@@ -22,10 +23,12 @@
         <li><a href="dining.html">Dining</a></li>
         <li><a href="spa.html" class="active">Spa</a></li>
         <li><a href="activities.html">Activities</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
       </ul>
     </nav>
-    <div class="header-right">Maldives, 28°C</div>
-  </header>
+    <div class="header-right">
+      <span id="weather">Loading weather...</span>
+    </div>  </header>
 
   <!-- Hero Section -->
   <section class="spa-hero">

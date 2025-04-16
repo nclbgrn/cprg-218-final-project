@@ -172,6 +172,25 @@ h1, h2, h3 {
     align-items: center;
   }
 
+  /* Weather Display */
+#weather {
+  background-color: #e0f7fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007a8a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 122, 138, 0.15);
+  transition: all 0.3s ease;
+}
+
+#weather:hover {
+  background-color: #b2ebf2;
+  box-shadow: 0 4px 12px rgba(0, 122, 138, 0.2);
+  transform: translateY(-2px);
+}
+
   /* Footer */
 footer {
     text-align: center;
@@ -181,5 +200,61 @@ footer {
     color: #555;
   }
   
+/* Responsive Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .nav-center {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-center ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-center a {
+    padding: 10px;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .header-right {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .accommodation-hero h1 {
+    font-size: 2rem;
+  }
+
+  .room-info {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .room-card img {
+    height: 200px;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+}
   
