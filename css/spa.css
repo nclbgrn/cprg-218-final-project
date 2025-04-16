@@ -1,0 +1,166 @@
+/* General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #333;
+    background-color: #fefefe;
+    line-height: 1.6;
+  }
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #006666;
+    text-align: center;
+  }
+  
+  /* HEADER STYLING (matching site style) */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 45px;
+    margin-right: 12px;
+  }
+  
+  .logo-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #0f5c72;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .nav-center ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-center a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #0f5c72;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-center a:hover {
+    background-color: #e0f7fa;
+    color: #064d5a;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .header-right {
+    font-size: 1rem;
+    color: #0f5c72;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  /* Hero Banner */
+  .spa-hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: url('../images/spa room.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .spa-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .spa-hero p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+  }
+  
+  /* Spa Service Grid */
+  .spa-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Card Styling */
+  .spa-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-bottom: 1rem;
+  }
+  
+  .spa-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .spa-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .spa-card h3 {
+    font-size: 1.6rem;
+    margin: 1.5rem;
+    color: #0f5c72;
+  }
+  
+  .spa-card ul {
+    list-style: none;
+    padding: 0 1.5rem;
+    color: #333;
+  }
+  
+  .spa-card li {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #e0e0e0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

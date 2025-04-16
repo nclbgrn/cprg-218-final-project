@@ -1,0 +1,26 @@
+/* Weather Widget Styling */
+.weather-widget {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: #0f5c72;
+  }
+  
+  .weather-widget img {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+  }
+  
+  .weather-info span {
+    font-size: 1rem;
+  }
+  
+  .weather-info small {
+    display: block;
+    font-size: 0.75rem;
+    color: #4d9caa;
+    margin-top: -4px;
+  }
+  
